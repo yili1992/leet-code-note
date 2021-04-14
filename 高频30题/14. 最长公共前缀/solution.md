@@ -11,7 +11,7 @@ tail 指针右移，判断 tail 指向的元素是否在 [head:tail] 的窗口�
 如果窗口中存在该元素，则将 head 指针右移，直到窗口中不包含该元素。
 返回窗口长度的最大值。
 
-
+```
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         head = 0
@@ -27,6 +27,7 @@ class Solution:
                 while s[tail] in s[head: tail]:
                     head += 1
         return res
+```
 复杂度分析
 时间复杂度：\mathcal{O}(n^2)O(n 
 2
